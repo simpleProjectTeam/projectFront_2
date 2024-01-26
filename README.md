@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# projectFront_2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [TravelDiary]()
 
-## Available Scripts
+<b>간단한 CRUD 여행지 등록</b>
 
-In the project directory, you can run:
+<br />
 
-### `npm start`
+## TravelDiary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+내가 추천하고 싶은 여행지 CRUD 만들어 보기
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📆 프로젝트 기간
 
-### `npm run build`
+- 2024.01.26 ~ 2024.02.01
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 😎 Members
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<table>
+   <tr>
+    <td align="center"><b><a href="https://github.com/simpleProjectTeam/projectFront_2">고우영</a></b></td>
+    <td align="center"><b><a href="https://github.com/simpleProjectTeam/projectBack_2">정현식</a></b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Frontend</b></td>
+    <td align="center"><b>Backend</b></td>
+  </tr>
+</table>
 
-### `npm run eject`
+<br/>
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 프로젝트 기능 소개
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 🐰 여행 추천 CRUD
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 전세계의 여행지를 추천을 해주기 위해 이미지와 내용을 등록, 삭제, 수정을 할 수 있습니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<br/>
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Tools
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Design
 
-### Code Splitting
+<p>
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Frontend
 
-### Analyzing the Bundle Size
+<p>
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Reacticons-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/Fetch_API-F7DF1E?style=for-the-badge&logo=fetch-api&logoColor=black">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Backend
 
-### Making a Progressive Web App
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Infrastructure
 
-### Advanced Configuration
+<p>
+  <img src="https://img.shields.io/badge/Fly.io-2B7AC9?style=for-the-badge&logo=fly.io&logoColor=white">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Dev tools
 
-### Deployment
+<p> 
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
+<br>
 
-### `npm run build` fails to minify
+## 🔥 Trouble Shooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Issue1
+
+#### 원인
+
+#### 해결 순서
+
+<br/>
+
+### Issue2
+
+<br>
+<br>
