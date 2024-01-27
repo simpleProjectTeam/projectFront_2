@@ -8,7 +8,7 @@ export default function Header() {
       <div>
         <p className="font-bold text-5xl text-purple-600">TravelDiary</p>
       </div>
-      <Link to="">
+      <Link to="/itemform">
         <button>
           <TfiWrite size={30} />
         </button>
