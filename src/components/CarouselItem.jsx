@@ -27,13 +27,13 @@ export default function CarouselItem({ item, index }) {
       <div className="w-full h-full flex justify-center border-b-2 border-purple-500">
         <img src={covers[index] } className="w-5/6 h-[500px] object-cover p-5"/>
       </div>
-      <div className="w-9/12 m-auto mt-4 border-b-4 border-purple-500">
+      <div className="w-9/12 m-auto mt-4">
         <span className="font-bold text-4xl">{item.title}</span>
         <span className="ml-4 text-sm font-bold text-gray-500 underline">
           {item.country}
         </span>
       </div>
-      <div className="w-9/12 h-60 m-auto mt-4 p-5 rounded-2xl border-purple-500 border">
+      <div className="w-10/12 h-60 m-auto mt-4 p-5">
         <span className="h-full text-xl font-bold">{item.content}</span>
       </div>
     </div>
