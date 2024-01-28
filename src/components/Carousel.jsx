@@ -21,6 +21,20 @@ export default function Carousel() {
     fetchData();
   }, []);
 
+  const handleDeleteItem = async (deletedItemId) => {
+    try {
+      // 서버에 DELETE 요청 보내기
+      await fetch(`https://diary-back.fly.dev/api/v1/diary/${deletedItemId}`, {
+        method: 'DELETE',
+      });
+
+      // 성공하면 클라이언트에서 해당 아이템 삭제
+      setItems((prevItems) => prevItems.filter((item) => item.id !== deletedItemId));
+    } catch (error) {
+      console.error("삭제 오류:", error);
+    }
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -39,6 +53,7 @@ export default function Carousel() {
             content={item.content}
             country={item.country}
             image={item.image}
+            onDelete={() => handleDeleteItem(item.id)}
           />
         ))}
       </Slider>

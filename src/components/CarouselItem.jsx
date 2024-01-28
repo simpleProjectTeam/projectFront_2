@@ -3,7 +3,14 @@ import { RiDeleteBinFill } from "react-icons/ri";
 import { LuPenSquare } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
-export default function CarouselItem({ title, country, image, content }) {
+export default function CarouselItem({
+  id,
+  title,
+  country,
+  image,
+  content,
+  onDelete,
+}) {
   return (
     <div className="w-full m-auto mt-10 carousel-item flex-col rounded-2xl border shadow-lg">
       <div className="w-full p-5 flex justify-between items-center border-b-2 border-purple-500">
@@ -14,13 +21,17 @@ export default function CarouselItem({ title, country, image, content }) {
               <LuPenSquare size={20} />
             </button>
           </Link>
-          <button>
+          <button onClick={() => onDelete(id)}>
             <RiDeleteBinFill size={20} />
           </button>
         </div>
       </div>
       <div className="w-full h-full flex justify-center border-b-2 border-purple-500">
-        <img src={image} alt={title} className="w-5/6 h-[500px] object-cover p-5" />
+        <img
+          src={image}
+          alt={title}
+          className="w-5/6 h-[500px] object-cover p-5"
+        />
       </div>
       <div className="w-9/12 m-auto mt-4">
         <span className="font-bold text-4xl">{title}</span>
