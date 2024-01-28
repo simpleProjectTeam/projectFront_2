@@ -10,8 +10,8 @@ const covers = [travel1, travel2, travel3];
 
 export default function CarouselItem({ item, index }) {
   return (
-    <div className="w-4/5 h-auto m-auto mt-10 carousel-item flex-col rounded-2xl border shadow-lg">
-      <div className="w-full p-5 flex justify-between items-center">
+    <div className="w-full m-auto mt-10 carousel-item flex-col rounded-2xl border shadow-lg">
+      <div className="w-full p-5 flex justify-between items-center border-b-2 border-purple-500">
         <p className="text-xl font-bold text-red-600">Travel Destination</p>
         <div className="flex items-center">
           <Link to="/modifyform" className="flex items-center">
@@ -24,17 +24,17 @@ export default function CarouselItem({ item, index }) {
           </button>
         </div>
       </div>
-      <div className="flex justify-center">
-        <img src={covers[index]} className="w-9/12"/>
+      <div className="w-full h-full flex justify-center border-b-2 border-purple-500">
+        <img src={covers[index] } className="w-5/6 h-[500px] object-cover p-5"/>
       </div>
-      <div className="w-9/12 m-auto mt-4">
+      <div className="w-9/12 m-auto mt-4 border-b-4 border-purple-500">
         <span className="font-bold text-4xl">{item.title}</span>
         <span className="ml-4 text-sm font-bold text-gray-500 underline">
           {item.country}
         </span>
       </div>
-      <div className="w-9/12 h-full m-auto mt-4">
-        <span className="text-xl font-bold">{item.content}</span>
+      <div className="w-9/12 h-60 m-auto mt-4 p-5 rounded-2xl border-purple-500 border">
+        <span className="h-full text-xl font-bold">{item.content}</span>
       </div>
     </div>
   );

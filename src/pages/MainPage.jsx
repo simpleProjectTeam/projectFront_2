@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 function MainPage() {
   return (
-    <div className="w-2/5 h-full m-auto mt-10">
+    <div className="max-w-5xl max-h-screen m-auto mt-10">
       <Header />
       <Carousel />
     </div>

@@ -38,7 +38,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container w-3/5 h-full m-auto">
       <Slider {...settings}>
         {items.map((item, i) => {
           return <CarouselItem key={item.id} item={item} index={i} />;
