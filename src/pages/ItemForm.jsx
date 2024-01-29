@@ -2,40 +2,48 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function ItemForm() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     image: null,
     title: "",
     country: "",
-    content: "",
+    content: ""
   });
-
-  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: value
     });
   };
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setFormData({
-      ...formData,
-      image: file,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // 폼 제출 로직을 추가할 수 있습니다. (예: 서버로 데이터 전송)
-    console.log("폼 제출:", formData);
-  };
 
-  const handleCancel = () => {
-    // 취소 버튼 클릭 시 홈으로 이동
-    navigate("/");
+    if (!formData.title || !formData.country || !formData.content) {
+      console.error("필수 필드를 모두 작성해주세요");
+      return;
+    }
+
+    try {
+      const response = await fetch("https://diary-back.fly.dev/api/v1/diary", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        navigate("/");
+      } else {
+        console.error("제출 실패:", response.status);
+      }
+    } catch (error) {
+      console.error("오류 발생:", error);
+    }
   };
 
   return (
@@ -56,7 +64,7 @@ export default function ItemForm() {
             accept="image/*"
             id="image"
             name="image"
-            onChange={handleImageChange}
+            onChange={handleInputChange}
           />
         </div>
         <div className="mb-4">
@@ -70,9 +78,8 @@ export default function ItemForm() {
             type="text"
             id="title"
             name="title"
-            value={formData.title}
-            onChange={handleInputChange}
             className="w-full border rounded-md py-2 px-3"
+            onChange={handleInputChange}
           />
         </div>
         <div className="mb-4">
@@ -86,9 +93,8 @@ export default function ItemForm() {
             type="text"
             id="country"
             name="country"
-            value={formData.country}
-            onChange={handleInputChange}
             className="w-full border rounded-md py-2 px-3"
+            onChange={handleInputChange}
           />
         </div>
         <div className="mb-4">
@@ -101,9 +107,8 @@ export default function ItemForm() {
           <textarea
             id="content"
             name="content"
-            value={formData.content}
-            onChange={handleInputChange}
             className="w-full border rounded-md py-2 px-3"
+            onChange={handleInputChange}
           />
         </div>
         <div className="flex justify-end items-center">
@@ -117,7 +122,6 @@ export default function ItemForm() {
             <button
               type="button"
               className="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600"
-              onClick={handleCancel}
             >
               취소
             </button>
