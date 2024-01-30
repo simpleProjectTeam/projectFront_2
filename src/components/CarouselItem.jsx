@@ -16,7 +16,7 @@ export default function CarouselItem({
       <div className="w-full p-5 flex justify-between items-center border-b-2 border-purple-500">
         <p className="text-xl font-bold text-red-600">Travel Destination</p>
         <div className="flex items-center">
-          <Link to="/modifyform" className="flex items-center">
+          <Link to={`/modifyform/${id}`} className="flex items-center">
             <button className="text-purple-500 mr-3">
               <LuPenSquare size={20} />
             </button>

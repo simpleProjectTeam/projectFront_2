@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/itemform" element={<ItemForm />} />
-        <Route path="/modifyform" element={<ModifyForm/>}/>
+        <Route path="/modifyform/:id" element={<ModifyForm/>}/>
       </Routes>
     </BrowserRouter>
   );

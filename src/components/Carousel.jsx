@@ -7,6 +7,7 @@ import CarouselItem from "./CarouselItem";
 export default function Carousel() {
   const [items, setItems] = useState([]);
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,14 +22,14 @@ export default function Carousel() {
     fetchData();
   }, []);
 
-  const handleDeleteItem = async (deletedItemId) => {
+  const handleDeleteItem = async (id) => {
     try {
     
-      await fetch(`https://diary-back.fly.dev/api/v1/diary/${deletedItemId}`, {
+      await fetch(`https://diary-back.fly.dev/api/v1/diary/${id}`, {
         method: 'DELETE',
       });
 
-      setItems((prevItems) => prevItems.filter((item) => item.id !== deletedItemId));
+      setItems((prevItems) => prevItems.filter((item) => item.id !== id));
     } catch (error) {
       console.error("삭제 오류:", error);
     }
@@ -48,6 +49,7 @@ export default function Carousel() {
         {items.map((item, i) => (
           <CarouselItem
             key={item.id}
+            id={item.id}
             title={item.title}
             content={item.content}
             country={item.country}
