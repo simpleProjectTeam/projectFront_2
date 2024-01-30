@@ -110,6 +110,11 @@
 
   <img src="https://i.postimg.cc/26vMfVZ0/2024-01-30-153856.png"> 
   이런식으로 Link가 들어가있을때
+
+  문제가 일어난 부분 
+  <img src="https://i.postimg.cc/bvRSVR6g/2024-01-30-154648.png"> 
+
+  바뀐 부분
   <img src="https://i.postimg.cc/j5zgFmp9/2024-01-30-153906.png">
   CarouselItem에서 id를 명시적으로 받아와서 링크로 돌렸어야 하는 간단한 문제였습니다.
 <br/>
