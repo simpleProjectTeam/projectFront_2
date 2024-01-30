@@ -49,7 +49,7 @@ export default function ItemForm() {
   return (
     <div className="w-2/6 h-full m-auto mt-10 rounded-2xl border shadow-lg p-6 bg-purple-200">
       <div className="flex justify-center my-10">
-        <p className="font-bold text-4xl">추천 장소 등록</p>
+        <p className="font-bold text-4xl">다이어리 내용등록</p>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
