@@ -99,14 +99,19 @@
 ## 🔥 Trouble Shooting
 
 ### Issue1
+  <img src="https://i.postimg.cc/G2VLX81z/2024-01-30-153839.png">
 
 #### 원인
 
-#### 해결 순서
+  - 수정페이지에서 로직을 구현을 했을때 id를 못찾는 이슈가 생김
 
+#### 해결 순서
+  - 로직에는 문제가 없고, 디버그로 순서를 봤을 때, 라우터와 링크로 인한 id를 못찾는 경우인 것을 확인
+
+  <img src="https://i.postimg.cc/26vMfVZ0/2024-01-30-153856.png"> 
+  이런식으로 Link가 들어가있을때
+  <img src="https://i.postimg.cc/j5zgFmp9/2024-01-30-153906.png">
+  CarouselItem에서 id를 명시적으로 받아와서 링크로 돌렸어야 하는 간단한 문제였습니다.
 <br/>
 
-### Issue2
 
-<br>
-<br>
